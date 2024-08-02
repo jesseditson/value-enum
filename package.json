@@ -1,0 +1,38 @@
+{
+  "name": "value-enum",
+  "version": "0.1.0",
+  "description": "an npm package with utilities for handling object-based, optionally value-containing, enums.",
+  "main": "pkg/value-enum.js",
+  "types": "pkg/value-enum.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "test": "tsc --noEmit && node --import tsx --test test/*.spec.ts"
+  },
+  "files": [
+    "pkg"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesseditson/value-enum.git"
+  },
+  "keywords": [
+    "rust",
+    "value",
+    "enum",
+    "typescript",
+    "types"
+  ],
+  "author": "Jesse Ditson <jesse.ditson@gmail.com>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/jesseditson/value-enum/issues"
+  },
+  "homepage": "https://github.com/jesseditson/value-enum#readme",
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "tsafe": "^1.7.2",
+    "tsx": "^4.16.5",
+    "typescript": "^5.5.4"
+  }
+}
